@@ -1,4 +1,4 @@
-import imatge from './img/face.png'
+import imatge from '/img/face.png'
 
 function About () {
     return(
