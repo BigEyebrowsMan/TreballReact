@@ -3,6 +3,7 @@ import './App.css';
 import Test from './test/test.js';
 import Formulari from './test/formulari.js';
 import Fimg from './test/fimg.js';
+import Navegacio from './nav.js';
 
 function App() {
   return (

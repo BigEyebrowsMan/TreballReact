@@ -1,3 +1,4 @@
+import './nav.css'
 function Navegacio() {
     return(
         <nav>
@@ -13,3 +14,5 @@ function Navegacio() {
 
     )
 }
+
+export default Navegacio;
