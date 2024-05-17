@@ -1,5 +1,5 @@
 import imatge from "/home/dani/Documents/ento-web/src/img/face.png";
-
+import "./index.scss";
 function About() {
   return (
     <div class="wrapper">
