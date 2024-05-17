@@ -52,7 +52,7 @@
     display: block
 }
 
-.section.top {
+.section-top {
     padding-top: 48px
 }
 
@@ -67,4 +67,8 @@
     padding-top: 80px;
     padding-bottom: 0;
     display: flex
+}
+
+.section.top-section {
+    padding-top: 48px
 }

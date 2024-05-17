@@ -17,8 +17,9 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="content">
       <div class="section-top">
+        <div class="intro">
         <h2 class="section-top-heading">Works</h2>
         <a href="" clas="section-top-link">
           <div>View All</div>
