@@ -78,6 +78,10 @@ function About() {
       <div class="section">
         <div class="section-top">
           <h2 class="section-top-heading">Works</h2>
+          <a href="" clas="section-top-link">
+            <div>View All</div>
+            <div class="hover-line" style></div>
+          </a>
         </div>
       </div>
     </div>
