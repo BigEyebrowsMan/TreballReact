@@ -75,6 +75,11 @@ function About() {
           </div>
         </div>
       </div>
+      <div class="section">
+        <div class="section-top">
+          <h2 class="section-top-heading">Works</h2>
+        </div>
+      </div>
     </div>
   );
 }
