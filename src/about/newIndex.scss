@@ -98,6 +98,12 @@ body {
     top: 0;
 }
 
+.side-info {
+    padding: 2.5vw;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -118,3 +124,30 @@ element.style {
     transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
