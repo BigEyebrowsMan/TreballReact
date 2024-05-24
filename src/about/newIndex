@@ -198,7 +198,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
       </div>
       <div class="social-buttons">
         <a
-          href="https://www.artstation.com/sarawav"
+          href="https://www.artstation.com/"
           target="_blank"
           class="social-button w-inline-block"
           ><img
@@ -220,7 +220,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
             "
             alt="" /></a
         ><a
-          href="https://www.linkedin.com/in/sarawav/"
+          href="https://www.linkedin.com/in/"
           target="_blank"
           class="social-button w-inline-block"
           ><img
@@ -228,7 +228,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
             loading="lazy"
             alt="" /></a
         ><a
-          href="https://sketchfab.com/sarawav"
+          href="https://sketchfab.com/"
           target="_blank"
           class="social-button w-inline-block"
           ><img
@@ -236,7 +236,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
             loading="lazy"
             alt="" /></a
         ><a
-          href="https://www.instagram.com/sarawav/"
+          href="https://www.instagram.com/"
           target="_blank"
           class="social-button w-inline-block"
           ><img
@@ -244,7 +244,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
             loading="lazy"
             alt="" /></a
         ><a
-          href="https://www.pinterest.com/sararinette"
+          href="https://www.pinterest.com/"
           target="_blank"
           class="social-button w-inline-block"
           ><img
