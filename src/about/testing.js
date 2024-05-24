@@ -7,6 +7,17 @@ const photoSyle = {
   transformStyle: "preserve-3d",
 };
 
+const headerStyle = {
+  transform:
+    "width: 100%; transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
+};
+
+const animationViewAll = {
+  transform:
+    "width: 100%, translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+  transformStyle: "preserve-3d",
+};
+
 function Test() {
   return (
     <div class="wrapper">
@@ -24,6 +35,23 @@ function Test() {
               <a class="portfolio">View Portafolio</a>
               <a class="About">about</a>
             </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-top">
+            <h2 class="section-top-heading">Works</h2>
+            <a
+              data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad844"
+              href="/works"
+              class="section-top-link w-inline-block"
+            >
+              <div>View All</div>
+              <div
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad847"
+                class="hover-line"
+                style={animationViewAll}
+              ></div>
+            </a>
           </div>
         </div>
       </div>
