@@ -1,0 +1,37 @@
+<div class="section">
+      <div class="services">
+        <div class="service">
+          <div class="icon-box">
+            <img src="" loading="lazy" alt class="service-icon" />
+            <div class="icon-decor">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+            </div>
+          </div>
+          <h4 class="service-heading">3D modeling</h4>
+        </div>
+        <div class="service">
+          <div class="icon-box">
+            <img src="" loading="lazy" alt class="service-icon" />
+            <div class="icon-decor">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+            </div>
+          </div>
+          <h4 class="service-heading">3D printing</h4>
+        </div>
+        <div class="service">
+          <div class="icon-box">
+            <img src="" loading="lazy" alt class="service-icon" />
+            <div class="icon-decor">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+            </div>
+          </div>
+          <h4 class="service-heading">3D repairing</h4>
+        </div>
+      </div>
+    </div>

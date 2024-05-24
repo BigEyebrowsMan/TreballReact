@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.scss";
+import "./index.css";
 import App from "./App";
-import About from "./about";
+import AboutMe from "./about";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navegacio from "./nav";
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "about",
-    element: <About />,
+    element: <AboutMe />,
   },
 ]);
 
