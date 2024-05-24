@@ -1,3 +1,19 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .page-wrapper {
     z-index: 10;
     align-items: flex-start;
@@ -71,4 +87,34 @@
 
 .section.top-section {
     padding-top: 48px
+}
+
+.sidebar {
+    width: 30%;
+    min-width: 320px;
+    padding: 3vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.social-buttons {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 16px;
+    display: block;
+}
+
+element.style {
+    width: 100%;
+    transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }

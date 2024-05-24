@@ -57,43 +57,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="services">
-        <div class="service">
-          <div class="icon-box">
-            <img src="" loading="lazy" alt class="service-icon" />
-            <div class="icon-decor">
-              <div class="circle-1"></div>
-              <div class="circle-2"></div>
-              <div class="circle-3"></div>
-            </div>
-          </div>
-          <h4 class="service-heading">3D modeling</h4>
-        </div>
-        <div class="service">
-          <div class="icon-box">
-            <img src="" loading="lazy" alt class="service-icon" />
-            <div class="icon-decor">
-              <div class="circle-1"></div>
-              <div class="circle-2"></div>
-              <div class="circle-3"></div>
-            </div>
-          </div>
-          <h4 class="service-heading">3D printing</h4>
-        </div>
-        <div class="service">
-          <div class="icon-box">
-            <img src="" loading="lazy" alt class="service-icon" />
-            <div class="icon-decor">
-              <div class="circle-1"></div>
-              <div class="circle-2"></div>
-              <div class="circle-3"></div>
-            </div>
-          </div>
-          <h4 class="service-heading">3D repairing</h4>
-        </div>
-      </div>
-    </div>
+    
   </div>
   <div class="sidebar">
     <div class="media-wrapper sidebar-media">
@@ -107,7 +71,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
         class="overlay"
       ></div>
       <img
-        src=""
+        src="src\img\anngu.jpg"
         style="
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
             rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -126,7 +90,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
       <div class="social-links">
         <div class="social-buttons">
           <a
-            href="https://www.artstation.com/sarawav"
+            href="https://www.artstation.com/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
@@ -134,7 +98,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
               loading="lazy"
               alt="" /></a
           ><a
-            href="https://www.instagram.com/sarawav/"
+            href="https://www.instagram.com/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
@@ -142,7 +106,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
               loading="lazy"
               alt="" /></a
           ><a
-            href="https://www.behance.net/sarawav"
+            href="https://www.behance.net/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
@@ -150,7 +114,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
               loading="lazy"
               alt="" /></a
           ><a
-            href="https://www.youtube.com/watch?v=OJo_agDMZ5w&amp;ab_channel=SaraWavreille"
+            href="https://www.youtube.com/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
@@ -158,7 +122,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
               loading="lazy"
               alt="" /></a
           ><a
-            href="https://www.linkedin.com/in/sarawav/"
+            href="https://www.linkedin.com/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
@@ -166,7 +130,7 @@ import imatge from "/home/dani/Documents/ento-web/src/img/face.png"; import
               loading="lazy"
               alt="" /></a
           ><a
-            href="https://www.linkedin.com/in/sarawav/"
+            href="https://www.linkedin.com/"
             target="_blank"
             class="social-button w-inline-block"
             ><img
