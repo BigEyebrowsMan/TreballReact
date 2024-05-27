@@ -9,13 +9,24 @@ const photoSyle = {
 
 const headerStyle = {
   transform:
-    "width: 100%; transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
+    "width: 100%; transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);",
 };
 
 const animationViewAll = {
   transform:
     "width: 100%, translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
   transformStyle: "preserve-3d",
+};
+
+const worksViewer = {
+  transform:
+    "transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw",
+  transformStyle: "preserve-3d",
+};
+
+const cardPreview = {
+  transform:
+    "display: none; transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
 };
 
 function Test() {
@@ -54,24 +65,44 @@ function Test() {
             </a>
           </div>
           <div class="collection-list-wrapper-2 w-dyn-items">
-          <div role="listitem" 
-          class="collection-item-2 w-dyn-item">
-            <a data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b" 
-            href="https://cults3d.com/es/modelo-3d/juegos/majora-s-mask-annagualhz" class="work-card w-inline-block">
-              <div class="work-card-preview">
-                <div style="display: none; transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" 
-                class="overlay">
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/juegos/majora-s-mask-annagualhz"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg"
+                    srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2048w"
+                    class="bg-image"
+                  />
                 </div>
-                <img loading="lazy" 
-                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" 
-                alt="" 
-                src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg" 
-                sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw" 
-                srcset="https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2-p-500.png 500w, https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2-p-800.png 800w, https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2-p-1080.png 1080w, https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2-p-1600.png 1600w, https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2-p-2000.png 2000w, https://uploads-ssl.webflow.com/60a92d1952279b30b1a8b03d/61cb2afab3273f50d5a0ecde_little_indonesian_girl_compo2.png 2048w" 
-                class="bg-image"/>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/juegos/majora-s-mask-annagualhz"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg"
+                    srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2048w"
+                    class="bg-image"
+                  />
                 </div>
-                </a>
-          </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
