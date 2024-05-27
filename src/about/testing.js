@@ -20,7 +20,7 @@ const animationViewAll = {
 
 const worksViewer = {
   transform:
-    "transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw",
+    "transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);",
   transformStyle: "preserve-3d",
 };
 
@@ -76,6 +76,7 @@ function Test() {
                   <img
                     loading="lazy"
                     style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg"
                     srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2048w"
@@ -95,6 +96,7 @@ function Test() {
                   <img
                     loading="lazy"
                     style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg"
                     srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2048w"
