@@ -23,7 +23,6 @@ function App() {
         >
           Learn React yay
         </a>
-        <Fimg/>
       </header>
     </div>
   );
