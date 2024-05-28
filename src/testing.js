@@ -1,4 +1,4 @@
-import imatge from "/home/dani/Documents/ento-web/src/img/face.png";
+
 import "./testing.scss";
 
 const photoSyle = {
