@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import Test from "/home/dani/Documents/ento-web/src/about/testing.js";
+import Test from "./testing.js";
 import App from "./App";
-import About from "/home/dani/Documents/ento-web/src/about/newIndex.js";
+import About from "./newIndex.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navegacio from "./nav";
 
