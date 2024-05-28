@@ -65,6 +65,26 @@ function Test() {
             </a>
           </div>
           <div class="collection-list-wrapper-2 w-dyn-items">
+          <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/casa/princess-peach-stained-glass-window"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg"
+                    srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/6a7d2b1f-213a-4995-85c3-4f1d26265c13/_MG_3788.jpg 2048w"
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
             <div role="listitem" class="collection-item-2 w-dyn-item">
               <a
                 data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
@@ -88,7 +108,7 @@ function Test() {
             <div role="listitem" class="collection-item-2 w-dyn-item">
               <a
                 data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
-                href="https://cults3d.com/es/modelo-3d/juegos/majora-s-mask-annagualhz"
+                href="https://cults3d.com/es/modelo-3d/casa/abstract-paintings"
                 class="work-card w-inline-block"
               >
                 <div class="work-card-preview">
@@ -98,8 +118,106 @@ function Test() {
                     style={worksViewer}
                     sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
-                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg"
-                    srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/ee87fbf6-d528-4008-9ad6-f72ca422abe2/_MG_3749.jpg 2048w"
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/d8ef5174-4afc-4cab-80fa-0a9f75c8ae75/_MG_3834.jpeg"
+                   
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/casa/abstract-paintings"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ff0f3c21-cd96-45a6-a822-3119b18d65f4/1CEAA01A-7411-4E68-BA80-4876FB14A93E.jpeg"
+                   
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/arte/wood-gauntlet"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/8195348e-cacb-40a3-9006-269b9ff5a83c/IMG_3519.jpg"
+                   
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/arte/bone-axe-annagualhz"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/1c909f96-c42f-42cc-9d6a-68cd8378e9d6/IMG_3526.jpg"
+                   
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/arte/gomu-gomu"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ec8c814e-6f3f-449f-ae46-1b950b609fb6/_MG_4044.jpg"
+                    class="bg-image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div role="listitem" class="collection-item-2 w-dyn-item">
+              <a
+                data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
+                href="https://cults3d.com/es/modelo-3d/arte/chopper-annagualhz"
+                class="work-card w-inline-block"
+              >
+                <div class="work-card-preview">
+                  <div style={cardPreview} class="overlay"></div>
+                  <img
+                    loading="lazy"
+                    style={worksViewer}
+                    sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
+                    alt=""
+                    src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg"
+                    srcset="https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 500w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 800w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 1080w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 1600w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 2000w, https://fbi.cults3d.com/uploaders/20059559/illustration-file/e0ef193f-3019-425d-a781-ed81c2d3bbd8/_MG_4115.jpg 2048w"
                     class="bg-image"
                   />
                 </div>
@@ -117,7 +235,7 @@ function Test() {
           src="https://cdnb.artstation.com/p/users/avatars/001/327/773/large/fc9f0eb143dfec911cd3104c4d41fbe4.jpg?1712056185"
           style={photoSyle}
           sizes="(max-width: 767px) 87vw, (max-width: 991px) 80vw, 26vw"
-          //srcset="https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/6446f5875a1a45587435a33a_little_indonesian_girl_compo2-p-500.png 500w, https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/6446f5875a1a45587435a33a_little_indonesian_girl_compo2-p-800.png 800w, https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/6446f5875a1a45587435a33a_little_indonesian_girl_compo2.png 1000w"
+                    
           alt=""
           class="bg-image"
         ></img>

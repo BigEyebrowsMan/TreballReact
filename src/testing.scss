@@ -161,6 +161,12 @@ a {
     overflow: hidden;
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .bg-image {
     width: 100%;
     height: 100%;
@@ -170,7 +176,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    display: inline-block;
+    display: column;
     position: relative;
     top: 0;
     bottom: 0;
@@ -211,16 +217,30 @@ div {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.collection-item-2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers its container */
     display: block;
 }
 
 .works-grid {
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-    grid-template: ".Area"/.5fr .5fr;
-    grid-auto-columns: 1fr;
     display: grid;
+    grid-column-gap: 20px;  /* Defines the gap between columns */
+    grid-row-gap: 40px;     /* Defines the gap between rows */
+    grid-template-areas: 
+        "Area";             /* Defines the area named 'Area' */
+    grid-template-rows: 0.5fr;   /* Defines the row height as 0.5 fraction units */
+    grid-template-columns: 0.5fr; /* Defines the column width as 0.5 fraction units */
+    grid-auto-columns: 1fr;  /* Ensures any auto-generated columns will be 1fr */
 }
+.Area {
+    grid-area: Area;  /* Assigns the 'Area' area to this class */
+}
+
 
 .work-card {
     color: var(--dark);
@@ -233,6 +253,60 @@ div {
     position: relative;
     overflow: hidden;
 }
+
+
+
+.work-card-info {
+    color: var(--dark);
+    border: 1px solid transparent;
+    align-items: center;
+    margin: 0;
+    padding: 1vw 0 .2vw;
+    display: flex
+}
+
+.work-card-line {
+    width: 24px;
+    height: 2px;
+    background-color: var(--border);
+    margin-right: 12px
+}
+
+.work-card-heading {
+    color: var(--dark);
+    border: 1px solid transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: 500
+}
+
+.work-info-grid {
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    padding-top: 16px
+}
+
+.work-info {
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex
+}
+
+.work-info-name {
+    flex: none
+}
+
+.work-info-line {
+    border-bottom: 1px dotted var(--transparent-3);
+    flex: 1;
+    margin: 7px 4px
+}
+
 
 .collection-item-2 {
     padding-top: 0;
@@ -309,4 +383,1277 @@ div {
     --transparent-3: rgba(0,0,0,.16);
     --secondary-2: #f8cb35;
     --error: #ec5858;
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size:32px;
+        line-height: 40px
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 28px
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    blockquote {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 4vw;
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    figure {
+        padding: 9px
+    }
+
+    .page-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 112px;
+        padding-right: 40px;
+        display: flex
+    }
+
+    .left-side {
+        width: 112px;
+        min-width: 0;
+        padding: 20px;
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: auto
+    }
+
+    .content {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .sidebar {
+        width: 100%;
+        order: -1;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        position: absolute;
+    }
+
+    .sidebar.mobile-bottom {
+        order: 1
+    }
+
+    .section {
+        padding-bottom: 80px
+    }
+
+    .section.page-header-section {
+        padding-top: 38px;
+        padding-bottom: 32px
+    }
+
+    .intro {
+        padding-top: 0
+    }
+
+    .vertical-text {
+        height: auto;
+        transform-origin: 100%;
+        margin-top: 72px;
+        margin-right: 39px;
+        font-size: 48px;
+        line-height: 48px
+    }
+
+    .presentation{
+        display: column;
+    }
+
+    .bg-image.instagram-image {
+        opacity: 1
+    }
+
+    .side-info {
+        padding: 32px 20vw 0 0
+    }
+
+    .contact-block-link {
+        margin-right: 20px
+    }
+
+    .hover-line {
+        display: none
+    }
+
+    .contact-form {
+        grid-column-gap: 16px
+    }
+
+    .footer-bottom {
+        padding-top: 3vw;
+        padding-bottom: 3vw
+    }
+
+    .section-top {
+        margin-bottom: 32px;
+        padding-bottom: 12px
+    }
+
+    .social-link {
+        margin-right: 20px
+    }
+
+    .nav-bar {
+        margin: 20px
+    }
+
+    .menu-button {
+        width: 72px;
+        height: 72px;
+        padding: 17px 16px
+    }
+
+    .nav-link {
+        margin-left: 12px;
+        margin-right: 12px
+    }
+
+    .nav-links {
+        padding-right: 20px
+    }
+
+    .career-block {
+        grid-column-gap: 10px;
+        grid-template-areas: "Date Timeline Job"
+    }
+
+    .instagram-hover {
+        display: none
+    }
+
+    .service-icon {
+        width: 60px
+    }
+
+    .post-card-content {
+        margin-left: 6%;
+        margin-right: 6%
+    }
+
+    .back-link {
+        margin-top: 24px;
+        display: none
+    }
+
+    .side-box {
+        padding: 40px
+    }
+
+    .testimonials-button {
+        margin-top: 0
+    }
+
+    .review-content {
+        padding-left: 28px
+    }
+
+    .review-text {
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    .utility-icon {
+        width: 72px
+    }
+
+    .button-hover {
+        display: none
+    }
+
+    .work-card-preview {
+        height: 29vw;
+        min-height: 0
+    }
+
+    .work-card-info {
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+
+    .logo-box {
+        height: 14vw
+    }
+
+    .logo {
+        height: 3.3vw
+    }
+
+    .clients-header {
+        padding: 20px 24px
+    }
+
+    .bg-circle-big {
+        width: 70vw;
+        height: 70vw;
+        top: -20.7vw;
+        right: -9.5vw
+    }
+
+    .floating-button-wrapper {
+        margin-right: -24px
+    }
+
+    .menu-button-circle {
+        display: none
+    }
+
+    .side-top-info {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    .back-to-top {
+        display: none
+    }
+
+    .skills-info {
+        padding-right: 6%
+    }
+
+    .frame {
+        padding: 6vw
+    }
+
+    .slider {
+        height: 50vw
+    }
+
+    .slide-nav {
+        padding-top: 30px;
+        font-size: 6px
+    }
+
+    .slider-frame {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 11px
+    }
+
+    .slider-button {
+        width: 48px;
+        height: 48px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .sg-button-box {
+        padding: 6vw
+    }
+
+    .sg-color-card {
+        padding: 16px
+    }
+
+    .sg-color {
+        height: 18vw;
+        max-height: none
+    }
+
+    .sg-color-name {
+        margin-top: 12px
+    }
+
+    .nav-link-2 {
+        margin-left: 12px;
+        margin-right: 12px
+    }
+
+    .menu-button-circle-2 {
+        display: none
+    }
+
+    .nav-links-2 {
+        padding-right: 20px
+    }
+
+    .side-box-2 {
+        padding: 40px
+    }
+
+    .back-link-2 {
+        margin-top: 24px;
+        display: none
+    }
+
+    .section-top-2 {
+        margin-bottom: 32px;
+        padding-bottom: 12px
+    }
+
+    .footer-bottom-2 {
+        padding-top: 3vw;
+        padding-bottom: 3vw
+    }
+
+    .text-vertical-2 {
+        height: auto;
+        transform-origin: 100%;
+        margin-top: 72px;
+        margin-right: 39px;
+        font-size: 48px;
+        line-height: 48px
+    }
+
+    .work-card-preview-copy {
+        height: 29vw;
+        min-height: 0
+    }
+
+    .bg-image-copy.instagram-image {
+        opacity: 1
+    }
+
+    .work-card-info-copy,.work-card-info-copy-copy,.work-card-info-copy {
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size:28px;
+        line-height: 36px
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px
+    }
+
+    blockquote {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        padding: 28px
+    }
+
+    .page-wrapper {
+        padding-left: 40px
+    }
+
+    .wrapper {
+        z-index: 10;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .left-block {
+        display: none
+    }
+
+    .section {
+        padding-bottom: 64px
+    }
+
+    .section.page-header-section {
+        padding-bottom: 24px
+    }
+
+
+
+    .floating-button {
+        height: 60px;
+        padding-left: 24px;
+        padding-right: 24px
+    }
+
+    .footer-link {
+        margin-right: 24px;
+        font-size: 13px
+    }
+
+    .section-top.no-border {
+        padding-bottom: 0
+    }
+
+    .nav-bar {
+        margin: 0;
+        padding: 8px;
+        top: 0%;
+        bottom: auto;
+        left: auto;
+        right: 0%
+    }
+
+    .nav-menu {
+        width: 240px;
+        height: auto;
+        min-height: 100vh;
+        background-color: var(--white);
+        padding-top: 88px;
+        padding-bottom: 88px;
+        overflow: auto
+    }
+
+    .menu-button {
+        width: 60px;
+        height: 60px;
+        border-style: none;
+        padding: 13px 14px;
+        display: none
+    }
+
+    .menu-button.mobile-button {
+        background-color: var(--white);
+        background-color: #fff;
+        border-radius: 50%
+    }
+
+    .nav-link {
+        margin: 6px 20px 6px 0;
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    .nav-links {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 32px
+    }
+
+    .menu-icon {
+        width: 32px;
+        height: 32px
+    }
+
+    .job-position {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 4px
+    }
+
+    .nav-background {
+        display: none
+    }
+
+    .services {
+        flex-wrap: wrap
+    }
+
+    .service-icon {
+        width: 48px
+    }
+
+    .post-card-heading {
+        margin-bottom: 12px
+    }
+
+    .post-card-description {
+        display: none
+    }
+
+    .post-card-info,.post-info {
+        margin-top: 4px;
+        font-size: 11px;
+        line-height: 16px
+    }
+
+    .side-box {
+        padding: 32px
+    }
+
+    .testimonials-button {
+        margin-top: -4px
+    }
+
+    .review-avatar {
+        width: 80px;
+        height: 80px
+    }
+
+    .review-content {
+        padding-left: 20px
+    }
+
+    .review-text {
+        font-size: 17px
+    }
+
+    .review-info {
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+
+    .licence-info {
+        padding-left: 28px
+    }
+
+    .licence-photo,.licence-icons {
+        width: 168px;
+        height: 120px
+    }
+
+    .licence {
+        padding: 20px
+    }
+
+    .works-grid {
+        grid-column-gap: 16px;
+        grid-row-gap: 32px
+    }
+
+    .work-card-preview {
+        height: 26vw
+    }
+
+    .work-card-info {
+        margin-top: 4px
+    }
+
+    .work-card-heading {
+        font-size: 15px;
+        line-height: 20px
+    }
+
+    .logo-box {
+        height: 16vw
+    }
+
+    .logo {
+        height: 4vw
+    }
+
+    .clients-header {
+        text-align: center;
+        justify-content: center
+    }
+
+    .frame {
+        padding: 8vw
+    }
+
+    .slider {
+        height: 52vw
+    }
+
+    .slide-nav {
+        height: 48px;
+        padding-top: 20px
+    }
+
+    .slider-frame {
+        padding: 9px
+    }
+
+    .sg-button-box {
+        padding: 5vw
+    }
+
+    .sg-color-card {
+        padding: 12px
+    }
+
+    .sg-color-name {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-size: 11px;
+        line-height: 16px
+    }
+
+    .nav-menu-2 {
+        width: 240px;
+        height: auto;
+        min-height: 100vh;
+        background-color: #fff;
+        padding-top: 88px;
+        padding-bottom: 88px;
+        overflow: auto
+    }
+
+    .nav-link-2 {
+        margin: 6px 20px 6px 0;
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    .nav-links-2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 32px
+    }
+
+    .nav-background-2 {
+        display: none
+    }
+
+    .side-box-2 {
+        padding: 32px
+    }
+
+    .footer-link-2 {
+        margin-right: 24px;
+        font-size: 13px
+    }
+
+    .text-vertical-2 {
+        margin-top: 64px
+    }
+
+    .post-card-description-2 {
+        display: none
+    }
+
+    .work-card-preview-copy {
+        height: 26vw
+    }
+
+    .works-grid-copy {
+        grid-column-gap: 16px;
+        grid-row-gap: 32px
+    }
+
+    .work-card-info-copy {
+        margin-top: 4px
+    }
+
+    .work-card-heading-copy {
+        font-size: 15px;
+        line-height: 20px
+    }
+
+    .work-card-info-copy {
+        margin-top: 4px
+    }
+
+    .work-card-heading-copy {
+        font-size: 15px;
+        line-height: 20px
+    }
+
+    .work-card-info-copy,.work-card-info-copy-copy,.work-card-info-copy {
+        margin-top: 4px
+    }
+}
+
+@media screen and (max-width: 479px) {
+    blockquote {
+        font-size:17px;
+        line-height: 24px
+    }
+
+    .left-block {
+        display: none
+    }
+
+    /* Ensure .page-wrapper is positioned and has a higher z-index */
+    .page-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative; /* Add this line */
+        z-index: 10; /* Set a higher z-index */
+    }
+
+    /* Ensure .sidebar is positioned and has a lower z-index */
+    .sidebar {
+        min-width: 0;
+        position: fixed; /* Fix the position of the element */
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f8f8f8;
+        z-index: 5; /* Set a lower z-index to be behind .page-wrapper */
+    }
+
+
+    .media-wrapper {
+        height: 120vw
+    }
+
+    .side-info {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .contact-block{
+        z-index: 10; /* Set a higher z-index */
+    }
+    
+    .social-button{
+        z-index: 10; /* Set a higher z-index */
+    }
+
+    .contact-form {
+        grid-template-columns: 100%
+    }
+
+    .nav-link {
+        margin: 1.5vw 0
+    }
+
+    .nav-link.w--current {
+        z-index: 3
+    }
+
+    .nav-links {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-right: 0
+    }
+
+    .career-block {
+        grid-column-gap: 24px;
+        grid-row-gap: 8px;
+        grid-template-rows: auto auto;
+        grid-template-areas: "Timeline-Mobile Date-Mobile Date-Mobile""Timeline-Mobile Job-Mobile Job-Mobile";
+        padding-left: 8px
+    }
+
+    .career-date {
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+
+    .instagram-photos {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 0
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 8vw
+    }
+
+    .service {
+        width: 100%;
+        padding-top: 8vw;
+        padding-bottom: 8vw
+    }
+
+    .service-icon {
+        width: 64px
+    }
+
+    .post-card {
+        flex-direction: row;
+        padding: 20px;
+        display: block
+    }
+
+    .post-card-preview {
+        width: auto;
+        height: 96vw
+    }
+
+    .post-card-content {
+        margin: 20px 16px 0;
+        padding-bottom: 4px
+    }
+
+    .side-box {
+        padding: 24px
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .review-avatar {
+        width: 32vw;
+        height: 32vw;
+        margin-bottom: 12px
+    }
+
+    .review-content {
+        padding-left: 0
+    }
+
+    .review-text {
+        text-align: center
+    }
+
+    .review-info {
+        flex-direction: column;
+        margin-bottom: 0
+    }
+
+    .review-stars {
+        margin-top: 4px;
+        margin-left: 0
+    }
+
+    .licence-info {
+        text-align: center;
+        margin-top: 8px;
+        padding-left: 0
+    }
+
+    .licence-photo {
+        width: 100%;
+        height: 56vw;
+        margin-bottom: 8px
+    }
+
+    .licence-icons {
+        width: 100%;
+        height: 56vw;
+        margin-bottom: 8px;
+        padding: 12vw
+    }
+
+    .licence {
+        flex-direction: column;
+        padding: 24px 24px 16px
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr
+    }
+
+    .work-card-preview {
+        height: 68vw
+    }
+
+    .work-card-info {
+        margin-top: 10px
+    }
+
+    ._2-info-blocks {
+        grid-row-gap: 40px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr
+    }
+
+    .logotypes {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .logo-box {
+        height: 28vw
+    }
+
+    .logo {
+        height: 6.5vw
+    }
+
+    .floating-button-wrapper {
+        margin-top: -100px;
+        margin-right: -10px;
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+    ._2-buttons {
+        width: 100%;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .skills-info {
+        width: auto;
+        padding-bottom: 40px
+    }
+
+    .frame {
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .slider {
+        height: 60vw
+    }
+
+    .slide-nav {
+        padding-top: 23px
+    }
+
+    .slider-button {
+        display: none
+    }
+
+    .sg-buttons {
+        width: 100%;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%
+    }
+
+    .sg-button-box {
+        margin-bottom: -1px;
+        margin-right: 0;
+        padding: 14vw 11vw
+    }
+
+    .sg-colors {
+        grid-row-gap: 24px;
+        grid-template-columns: 1fr
+    }
+
+    .sg-color-card {
+        padding: 16px
+    }
+
+    .sg-color {
+        height: 50vw
+    }
+
+    .sg-color-name {
+        margin-top: 16px;
+        margin-bottom: 4px;
+        font-size: 13px
+    }
+
+    .nav-link-2 {
+        margin: 1.5vw 0
+    }
+
+    .nav-link-2.w--current {
+        z-index: 3
+    }
+
+    .nav-links-2 {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-right: 0
+    }
+
+    .side-box-2 {
+        padding: 24px
+    }
+
+    .post-card-preview-2 {
+        width: auto;
+        height: 96vw
+    }
+
+    .post-card-2 {
+        flex-direction: row;
+        padding: 20px;
+        display: block
+    }
+
+    .work-card-preview-copy {
+        height: 68vw
+    }
+
+    .works-grid-copy {
+        grid-template-columns: 1fr
+    }
+
+    .work-card-info-copy,.work-card-info-copy-copy,.work-card-info-copy {
+        margin-top: 10px
+    }
+}
+
+#w-node-_9c26b075-9073-bba1-6913-cadcd604c85a-8b8b1a39 {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-_9c26b075-9073-bba1-6913-cadcd604c85c-8b8b1a39 {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-db28a85a-09f3-3738-cc6d-8bc499175a70-8b8b1a39 {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-db28a85a-09f3-3738-cc6d-8bc499175a72-8b8b1a39 {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-_896b6915-87a2-b4c2-252b-0842f28b261c-8b8b1a39 {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-_896b6915-87a2-b4c2-252b-0842f28b261e-8b8b1a39 {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-c530add8-39c9-2973-63f3-944c0d6c17ac-8b8b1a39 {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-c530add8-39c9-2973-63f3-944c0d6c17ae-8b8b1a39 {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-c530add8-39c9-2973-63f3-944c0d6c17b8-8b8b1a39 {
+    grid-area: Date;
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-c530add8-39c9-2973-63f3-944c0d6c17ba-8b8b1a39 {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-_3265daa3-8ce2-5023-34cc-4c35d08875ec-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-_3265daa3-8ce2-5023-34cc-4c35d08875ee-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-_103d5bfa-cd5d-1a41-ac94-151ed6b37b10-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-_103d5bfa-cd5d-1a41-ac94-151ed6b37b12-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-_9972767b-0644-f03e-49c5-dc83949b8d37-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-_9972767b-0644-f03e-49c5-dc83949b8d39-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdcd-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdcf-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdda-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-e92e24bd-7a52-a9e3-8670-cb32d855bddc-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-f1160115-688d-95bd-b902-df95877efcdf-108b1a3f {
+    align-self: start;
+    justify-self: stretch
+}
+
+#w-node-f1160115-688d-95bd-b902-df95877efce1-108b1a3f {
+    align-self: stretch;
+    justify-self: center
+}
+
+#w-node-_67965006-ed15-62b3-cef7-78f150b961fd-998b1a46,#w-node-_27b26906-65e8-36fb-9e39-18a89ef02c98-998b1a46 {
+    align-self: stretch
+}
+
+#w-node-ec4508c5-4594-24e5-b925-553991d989f8-168b1a49,#w-node-ec4508c5-4594-24e5-b925-553991d989f9-168b1a49,#w-node-ec4508c5-4594-24e5-b925-553991d989fa-168b1a49,#w-node-ec4508c5-4594-24e5-b925-553991d989fb-168b1a49,#w-node-ec4508c5-4594-24e5-b925-553991d989fc-168b1a49,#w-node-ec4508c5-4594-24e5-b925-553991d989fd-168b1a49 {
+    align-self: center;
+    justify-self: center
+}
+
+#w-node-fb02d048-e4b0-6a66-8420-53a9f7173a3c-67826f58 {
+    align-self: stretch
+}
+
+@media screen and (max-width: 479px) {
+    #w-node-_9c26b075-9073-bba1-6913-cadcd604c85a-8b8b1a39 {
+        grid-area:Date-Mobile
+    }
+
+    #w-node-_9c26b075-9073-bba1-6913-cadcd604c85c-8b8b1a39 {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-_9c26b075-9073-bba1-6913-cadcd604c85f-8b8b1a39 {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-db28a85a-09f3-3738-cc6d-8bc499175a70-8b8b1a39 {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-db28a85a-09f3-3738-cc6d-8bc499175a72-8b8b1a39 {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-db28a85a-09f3-3738-cc6d-8bc499175a75-8b8b1a39 {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-_896b6915-87a2-b4c2-252b-0842f28b261c-8b8b1a39 {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-_896b6915-87a2-b4c2-252b-0842f28b261e-8b8b1a39 {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-_896b6915-87a2-b4c2-252b-0842f28b2621-8b8b1a39 {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17ac-8b8b1a39 {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17ae-8b8b1a39 {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17b0-8b8b1a39 {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17b8-8b8b1a39 {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17ba-8b8b1a39 {
+        grid-area: Timeline-Mobile
+    }
+
+    #w-node-c530add8-39c9-2973-63f3-944c0d6c17bc-8b8b1a39 {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-_3265daa3-8ce2-5023-34cc-4c35d08875ec-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-_3265daa3-8ce2-5023-34cc-4c35d08875ee-108b1a3f {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-_3265daa3-8ce2-5023-34cc-4c35d08875f1-108b1a3f {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-_103d5bfa-cd5d-1a41-ac94-151ed6b37b10-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-_103d5bfa-cd5d-1a41-ac94-151ed6b37b12-108b1a3f {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-_103d5bfa-cd5d-1a41-ac94-151ed6b37b15-108b1a3f {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-_9972767b-0644-f03e-49c5-dc83949b8d37-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-_9972767b-0644-f03e-49c5-dc83949b8d39-108b1a3f {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-_9972767b-0644-f03e-49c5-dc83949b8d3c-108b1a3f {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdcd-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdcf-108b1a3f {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdd2-108b1a3f {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bdda-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bddc-108b1a3f {
+        grid-area: Timeline-Mobile
+    }
+
+    #w-node-e92e24bd-7a52-a9e3-8670-cb32d855bddf-108b1a3f {
+        grid-area: Job-Mobile
+    }
+
+    #w-node-f1160115-688d-95bd-b902-df95877efcdf-108b1a3f {
+        grid-area: Date-Mobile
+    }
+
+    #w-node-f1160115-688d-95bd-b902-df95877efce1-108b1a3f {
+        grid-area: Timeline-Mobile;
+        align-self: stretch;
+        justify-self: center
+    }
+
+    #w-node-f1160115-688d-95bd-b902-df95877efce4-108b1a3f {
+        grid-area: Job-Mobile
+    }
 }
