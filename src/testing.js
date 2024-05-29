@@ -29,6 +29,31 @@ const cardPreview = {
     "display: none; transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
 };
 
+const instagramPhoto = {
+  transform:
+  "width: 100%; transform: translate3d(-102%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+};
+
+const mesInstagram = {
+  transform:
+  "display: none; transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+};
+
+const encaraMesInsta = {
+  transform:
+  "transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+};
+
+const encaraMesInsta2 = {
+  transform:
+  "transform: translate3d(0px, 24px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+};
+
+const animacioInsta = {
+  transform:
+  "display: none; transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+};
+
 function Test() {
   return (
     <div class="wrapper">
@@ -65,7 +90,7 @@ function Test() {
             </a>
           </div>
           <div class="collection-list-wrapper-2 w-dyn-items">
-          <div role="listitem" class="collection-item-2 w-dyn-item">
+            <div role="listitem" class="collection-item-2 w-dyn-item">
               <a
                 data-w-id="793fbe8c-fc98-cc2d-7ee8-8ad1f43ad84b"
                 href="https://cults3d.com/es/modelo-3d/casa/princess-peach-stained-glass-window"
@@ -119,7 +144,7 @@ function Test() {
                     sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/d8ef5174-4afc-4cab-80fa-0a9f75c8ae75/_MG_3834.jpeg"
-                   
+
                     class="bg-image"
                   />
                 </div>
@@ -138,7 +163,7 @@ function Test() {
                     style={worksViewer}
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/ff0f3c21-cd96-45a6-a822-3119b18d65f4/1CEAA01A-7411-4E68-BA80-4876FB14A93E.jpeg"
-                   
+
                     class="bg-image"
                   />
                 </div>
@@ -158,7 +183,7 @@ function Test() {
                     sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/8195348e-cacb-40a3-9006-269b9ff5a83c/IMG_3519.jpg"
-                   
+
                     class="bg-image"
                   />
                 </div>
@@ -178,7 +203,7 @@ function Test() {
                     sizes="sizes=(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 39vw, 26vw"
                     alt=""
                     src="https://fbi.cults3d.com/uploaders/20059559/illustration-file/1c909f96-c42f-42cc-9d6a-68cd8378e9d6/IMG_3526.jpg"
-                   
+
                     class="bg-image"
                   />
                 </div>
@@ -225,6 +250,56 @@ function Test() {
             </div>
           </div>
         </div>
+        <div class="section">
+        <div class="section-top">
+        <h2 class="section-top-heading">Instagram</h2>
+        <a data-w-id="c5206756-23c9-41f6-e850-1093727110cb" 
+        href="https://www.instagram.com/sarawav/" 
+        target="_blank" 
+        class="section-top-link w-inline-block">
+        <div>@ANNAGUAL.3D</div>
+        <div data-w-id="c5206756-23c9-41f6-e850-1093727110ce" 
+        class="hover-line" 
+        style={instagramPhoto}></div>
+        </a>
+        </div>
+        <div class="instagram-photos">
+        <a href="https://www.instagram.com/p/CKwn3gwjQtQ/" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src="https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/60ba525d7f2e033ebefab9cb_3D_diva.png" 
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/CKwn3gwjQtQ/" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src="https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/60ba525d7f2e033ebefab9cb_3D_diva.png" 
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        </div>
+      </div>
       </div>
       <div class="sidebar">
         <div
@@ -235,7 +310,7 @@ function Test() {
           src="https://cdnb.artstation.com/p/users/avatars/001/327/773/large/fc9f0eb143dfec911cd3104c4d41fbe4.jpg?1712056185"
           style={photoSyle}
           sizes="(max-width: 767px) 87vw, (max-width: 991px) 80vw, 26vw"
-                    
+
           alt=""
           class="bg-image"
         ></img>
@@ -316,7 +391,9 @@ function Test() {
           </a>
         </div>
       </div>
+    
     </div>
   );
 }
+
 export default Test;
