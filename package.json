@@ -9,7 +9,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+<<<<<<< HEAD
     "react-scripts": "^3.0.1",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> aa162b9 (Pre npm)
     "sass": "^1.77.2",
     "web-vitals": "^2.1.4"
   },
