@@ -1,5 +1,12 @@
 
 import "./testing.scss";
+import gnar from "./img/gnar.png";
+import cubone from "./img/cubone.png";
+import mascaras from "./img/mascaras.png";
+import tearsdocker from "./img/tearsdocker.png";
+import cult from "./img/cult.png";
+import doom from "./img/doom.png";
+
 
 const photoSyle = {
   transform:
@@ -65,7 +72,7 @@ function Test() {
           <div class="intro">
             <h1 class="heading">
               "Hi there! My name is Anna Gual, I am working in the 3D printing
-              world but I also do 3D design"
+              world and I also do 3D design"
             </h1>
             <div class="w-layout-grid _2-buttons">
               <a class="portfolio">View Portafolio</a>
@@ -254,7 +261,7 @@ function Test() {
         <div class="section-top">
         <h2 class="section-top-heading">Instagram</h2>
         <a data-w-id="c5206756-23c9-41f6-e850-1093727110cb" 
-        href="https://www.instagram.com/sarawav/" 
+        href="https://www.instagram.com/annagual.3d/" 
         target="_blank" 
         class="section-top-link w-inline-block">
         <div>@ANNAGUAL.3D</div>
@@ -264,13 +271,13 @@ function Test() {
         </a>
         </div>
         <div class="instagram-photos">
-        <a href="https://www.instagram.com/p/CKwn3gwjQtQ/" 
+        <a href="https://www.instagram.com/p/C2fSs-3NTSr/?img_index=1" 
         target="_blank" 
         class="instagram-preview w-inline-block">
         <div class="overlay" 
         style={mesInstagram}>
         </div>
-        <img src="https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/60ba525d7f2e033ebefab9cb_3D_diva.png" 
+        <img src={gnar} 
         sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
         alt="" 
         class="bg-image-insta instagram-image" 
@@ -281,13 +288,81 @@ function Test() {
         <div class="instagram-text">Instagram</div>
         </div>
         </a>
-        <a href="https://www.instagram.com/p/CKwn3gwjQtQ/" 
+        <a href="https://www.instagram.com/p/C5Lge3Orqkq/" 
         target="_blank" 
         class="instagram-preview w-inline-block">
         <div class="overlay" 
         style={mesInstagram}>
         </div>
-        <img src="https://uploads-ssl.webflow.com/60a92d1852279b1c6ea8b00f/60ba525d7f2e033ebefab9cb_3D_diva.png" 
+        <img src={cubone}
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/CvYDYtsLZAz/?img_index=1" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src={mascaras} 
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/CvzK8izN_rr/?img_index=1" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src={tearsdocker} 
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/C4I3SigNX2-/" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src={cult} 
+        sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
+        alt="" 
+        class="bg-image-insta instagram-image" 
+        style={encaraMesInsta}/>
+        <div class="instagram-hover" 
+        style={encaraMesInsta2}>
+        <div class="instagram-text-label">view on</div>
+        <div class="instagram-text">Instagram</div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/C6itzqKtSDQ/?img_index=1" 
+        target="_blank" 
+        class="instagram-preview w-inline-block">
+        <div class="overlay" 
+        style={mesInstagram}>
+        </div>
+        <img src={doom} 
         sizes="(max-width: 300px) 42vw, (max-width: 400px) 21vw, (max-width: 500px) 19vw, 13vw" 
         alt="" 
         class="bg-image-insta instagram-image" 
@@ -322,7 +397,7 @@ function Test() {
         </div>
         <div class="social-buttons">
           <a
-            href="https://www.artstation.com/"
+            href="https://www.artstation.com/annagual"
             target="_blank"
             class="social-button w-inline-block"
           >
@@ -357,7 +432,7 @@ function Test() {
             />
           </a>
           <a
-            href="https://sketchfab.com/"
+            href="https://sketchfab.com/annagualhz"
             target="_blank"
             class="social-button w-inline-block"
           >
