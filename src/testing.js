@@ -75,7 +75,7 @@ function Test() {
               world and I also do 3D design"
             </h1>
             <div class="w-layout-grid _2-buttons">
-              <a class="portfolio">View Portafolio</a>
+              <a href="https://mega.nz/file/YM1xlBgK#TJWBEB1mmH46OAIs_0NbqF5UA9yRDXtQaMkjNBTNEgM" class="portfolio" download>View Portafolio</a>
               <a class="About">about</a>
             </div>
           </div>

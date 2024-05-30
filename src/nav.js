@@ -5,7 +5,7 @@ function Navegacio() {
         <nav>
             <ul>
                 <li>
-                    <a href="./testing.js">Main</a>
+                    <a href="http://localhost:3000/testing">Main</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Working on it</a>
